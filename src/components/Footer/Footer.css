@@ -1,0 +1,48 @@
+.f-wrapper {
+  background: white;
+  padding: 2rem 0;
+}
+
+.f-container {
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.f-left {
+  gap: 1rem;
+}
+
+.f-left span {
+  color: var(--secondary);
+  font-size: 0.9rem;
+}
+
+.f-right {
+  gap: 0.5rem;
+}
+
+.f-right .secondaryText {
+  color: #444444 !important; /* Darker, high-contrast color for visibility */
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.f-menu {
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+@media (max-width: 768px) {
+  .f-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .f-left,
+  .f-right {
+    align-items: center !important;
+  }
+}

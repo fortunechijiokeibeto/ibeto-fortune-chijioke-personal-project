@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Luxury 4 Bedroom Duplex",
+    "price": "120,000,000",
+    "detail": "World Bank Housing Estate, Owerri. Fully finished detached duplex with ample parking space and modern interior fittings",
+    "image": "./r1.png"
+  },
+  {
+    "name": "Modern 2 Bedroom Apartment",
+    "price": "1,800,000 / yr",
+    "detail": "Ikenegbu Layout, Owerri. Newly built serviced apartment featuring 24/7 security, paved driveway, and constant water supply.",
+    "image": "./r2.png"
+  },
+  {
+    "name": "5 Bedroom Mansion & BQ",
+    "price": "250,000,000",
+    "detail": "New Owerri, Imo State. Executive smart residence with automated gates, swimming pool, and pristine landscape",
+    "image": "./r3.png"
+  },
+  {
+    "name": "3 Bedroom Flat",
+    "price": "2,500,000 / yr",
+    "detail": "Aladinma Housing Estate, Owerri. Spacious en-suite bedrooms, fitted kitchen cabinets, and secure gated compound.",
+    "image": "./r1.png"
+  },
+  {
+    "name": "Commercial Office Complex",
+    "price": "5,000,000 / yr",
+    "detail": "Bank Road, Owerri. Open-plan prime office space with high foot traffic visibility and generator backup.",
+    "image": "./r2.png"
+  },
+  {
+    "name": "4 Bedroom Bungalow",
+    "price": "45,000,000",
+    "detail": "Orlu Town, Imo State. Well-maintained family house sitting on two plots of land with clean Certificate of Occupancy (C of O)",
+    "image": "./r3.png"
+  }
+]

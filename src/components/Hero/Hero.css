@@ -1,0 +1,152 @@
+.hero-wrapper {
+  color: white;
+  position: relative;
+  padding-bottom: 2rem;
+  z-index: 1;
+}
+
+.hero-container {
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+.hero-left {
+  gap: 2.5rem;
+  flex: 1;
+}
+
+.hero-right {
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.hero-title {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title > h1 {
+  font-weight: 600;
+  font-size: 3.8rem;
+  line-height: 4rem;
+}
+
+.orange-circle {
+  height: 4rem;
+  width: 4rem;
+  background: var(--orange-gradient);
+  border-radius: 999px;
+  position: absolute;
+  right: 28%;
+  top: -10%;
+  z-index: -1;
+}
+
+.search-bar {
+  background-color: white;
+  border-radius: 5px;
+  border: 3px solid rgba(120, 120, 120, 0.374);
+  padding: 0.5rem 1rem;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 30rem;
+}
+.search-bar > input {
+  border: none;
+  outline: none;
+  width: 70%;
+}
+
+.stats {
+  width: 100%;
+  max-width: 30rem;
+  justify-content: space-between;
+}
+
+.stat > :nth-child(1) {
+  font-size: 2rem;
+}
+
+.stat > :nth-child(1) > :last-child {
+  color: orange;
+}
+
+.image-container {
+  width: 30rem;
+  height: 35rem;
+  overflow: hidden;
+  border-radius: 15rem 15rem 0 0;
+  border: 8px solid rgba(255, 255, 255, 0.12);
+}
+
+.image-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .hero-right {
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-container {
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+
+  .search-bar {
+    max-width: 100%;
+    padding: 0.25rem 0.25rem 0.25rem 0.7rem;
+    border-radius: 6px;
+    border: 1.5px solid rgba(120, 120, 120, 0.3);
+  }
+
+  .search-bar > input {
+    font-size: 0.85rem;
+    width: 55%;
+  }
+
+  .search-bar .button {
+    padding: 0.4rem 1rem;
+    font-size: 0.85rem;
+    border-radius: 4px;
+  }
+  .hero-right {
+    width: 100%;
+  }
+  .hero-title > h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .image-container {
+    width: 95%;
+    height: 25rem;
+  }
+
+  .stats {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .stat > :nth-child(1) {
+    font-size: 1.5rem;
+  }
+
+  .stat > :nth-child(2) {
+    font-size: 0.8rem;
+  }
+}

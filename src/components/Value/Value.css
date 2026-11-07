@@ -1,0 +1,139 @@
+.v-wrapper {
+  background: white;
+}
+
+.v-container {
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.v-container .image-container {
+  border: 8px solid rgb(232 232 232 / 93%);
+  width: 30rem;
+  height: 35rem;
+  overflow: hidden;
+  border-radius: 15rem 15rem 0 0;
+}
+
+.v-container .image-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.v-container > div {
+  flex: 1;
+}
+
+.v-right {
+  gap: 1rem;
+}
+
+/* Explicit styling to force the description text to display */
+.v-right .v-desc {
+  color: #707070 !important;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.accordion {
+  margin-top: 1.5rem;
+  border: none;
+  width: 100%;
+}
+
+.accordionItem {
+  background: white;
+  border: 0.8px solid rgba(128, 128, 128, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  box-shadow: 0px 20px 30px -10px rgba(136, 160, 255, 0.3);
+  transition: all 400ms ease-in-out;
+}
+
+.accordionButton {
+  background: white;
+  padding: 1rem 1.2rem;
+  width: 100%;
+  justify-content: space-between;
+  cursor: pointer;
+  border: none;
+}
+
+.accordionPanel {
+  padding: 1rem 1.2rem;
+  background: white;
+  animation: fadeIn 400ms ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.icon {
+  padding: 10px;
+  background: #eeeeff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon svg {
+  fill: var(--blue);
+}
+
+/* Continuous Floating Animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+.floating-image {
+  animation: float 4s ease-in-out infinite;
+}
+
+@media (max-width: 1024px) {
+  .v-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .v-container .image-container {
+    width: 95%;
+    height: 25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .accordionButton .primaryText {
+    font-size: 0.9rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .accordionButton {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+
+  .accordionButton > .primaryText {
+    flex: 1;
+    text-align: left;
+    margin: 0 0.8rem;
+    display: flex;
+    align-items: center;
+  }
+}
